@@ -253,25 +253,3 @@ def write_to_file(passed_node):
 		for node in passed_node:
 			file.write(node+' ')
 		file.write('\n')
-# 示例使用
-
-#根据桥介词生成新文本测试样例
-#inputText='Seek to explore new and exciting synergies'
-#生成图文本
-# strings='To @ explore strange new worlds,To seek out new life and new civilizations?'
-# wordlist=['']
-#
-# strings2word(strings,wordlist)
-# G=nx.DiGraph()
-# creatPIC(wordlist,G)
-#word1, word2 = input("Enter two words: ").split()
-#path = shortestPATH(G, word1, word2)
-#print(path)
-#print("The shortest path from {} to {} is: {}".format(word1, word2, " -> ".join(path)))
-#print(G[('to','explore')].get('weight',None))
-#generateNewText(inputText, G)
-#print(generateNewText(inputText, G))
-#showDirectedGraph(G)
-#word1, word2 = input("Enter two words: ").split()
-#print(queryBridgeWords(G,word1,word2))
-#randomWalk(G)
