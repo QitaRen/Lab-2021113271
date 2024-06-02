@@ -1,7 +1,7 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 import numpy as np
-
+#B1
 def visualize_paths(G, paths):
 	plt.clf()
 	# 创建一个新图，用于保存修改后的图
