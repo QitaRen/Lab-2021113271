@@ -12,7 +12,6 @@ wordlist=['']
 hello.strings2word(strings,wordlist)
 G=nx.DiGraph()	
 
-#print(strings)
 print('功能列表：')
 print(' -1、创建有向图并可视化输出')
 print(' -2、桥接词查询')
