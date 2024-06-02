@@ -6,7 +6,7 @@ import numpy as np
 #最小值函数
 def min(a,b):
 	return a if a<b else b
-	
+#C4	
 #输入有向图G，初始词word1，目的词word2，返回值为最短路径列表，如不可达，则返回空列表
 def shortestPATH(G, word1, word2):
 	paths=[[word1,0]]
