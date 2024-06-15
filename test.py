@@ -9,7 +9,7 @@ strings=''
 for line in lines:
 	strings+=line.rstrip()
 wordlist=['']
-hello.strings2word(strings,wordlist)
+hello.strings_to_words(strings,wordlist)
 G=nx.DiGraph()	
 
 #print(strings)
@@ -25,25 +25,25 @@ while True:
 	if choice=='q':
 		break
 	elif choice=='1':
-		hello.creatPIC(wordlist,G)
-		hello.showDirectedGraph(G)
+		hello.create_pic(wordlist,G)
+		hello.show_directed_graph(G)
 		print('有向图生成完成，可视化输出保存在 directing_graph.png 中')
 	elif choice=='2':
 		word1, word2 = input("Enter two words: ").split()
-		print(hello.queryBridgeWords(G,word1,word2))
+		print(hello.query_bridge_words(G,word1,word2))
 	elif choice=='3':
 		inputText=input('请输入待扩展文本：\n')
 		#generateNewText(inputText, G)
-		print(hello.generateNewText(inputText, G))
+		print(hello.generate_new_text(inputText, G))
 	elif choice=='4':
 		words = input("Enter one or two words: ")
 		wordsshell=['']
 		
-		hello.strings2word(words,wordsshell)
+		hello.strings_to_words(words,wordsshell)
 		if(len(wordsshell)==2):
 			word1=wordsshell[0]
 			word2=wordsshell[1]
-			paths = hello.shortestPATH(G, word1, word2)
+			paths = hello.shortest_path(G, word1, word2)
 			#print(paths)
 		
 			if paths:
@@ -57,10 +57,10 @@ while True:
 			else:
 				print('这两个节点不可达')
 		if(len(wordsshell)==1):
-			hello.allShortPath(G,wordsshell[0])
+			hello.all_short_paths(G,wordsshell[0])
 		
 	elif choice=='5':
-		hello.randomWalk(G)
+		hello.random_walk(G)
 	else:
 		print('请输入数字1-5，或字母q')
 		
